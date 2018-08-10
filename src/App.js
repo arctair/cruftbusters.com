@@ -47,7 +47,7 @@ class App extends Component {
           <div className='col-sm-6 vcenter'>
             <h2>Software</h2>
             <p>
-              Recolada Group specializes in software that tells stories and
+              Cruftbusters specializes in software that tells stories and
               automates work. When you work with us, your users will be happy
               they are using software fortified around their needs.
             </p>
@@ -71,7 +71,7 @@ class App extends Component {
           <div className='col-sm-6'>
             <h2>GIS</h2>
             <p>
-              Recolada Group strives to aid spatial awareness and understanding
+              Cruftbusters strives to aid spatial awareness and understanding
               through the power of modern GIS. If your application, pipeline, or
               idea has a spatial component, we want to be involved in helping
               it reach its full potential.
@@ -98,7 +98,7 @@ class App extends Component {
           <div>Contact Us</div>
           <div>[=] [=] [=] [=]</div>
           <div className='copyright'>
-            © 2018 Recolada Group. All Rights Reserved
+            © 2018 Cruftbusters. All Rights Reserved
           </div>
         </footer>
       </div>

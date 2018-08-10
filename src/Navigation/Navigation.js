@@ -6,7 +6,7 @@ const Navigation = () => (
   <Navbar fluid collapseOnSelect>
     <Navbar.Header>
       <Navbar.Brand>
-        <a href="/">Recolada Group</a>
+        <a href="/">Cruftbusters</a>
       </Navbar.Brand>
       <Navbar.Toggle />
     </Navbar.Header>
