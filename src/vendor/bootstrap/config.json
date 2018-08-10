@@ -384,7 +384,9 @@
   "css": [
     "grid.less",
     "forms.less",
-    "buttons.less"
+    "buttons.less",
+    "navs.less",
+    "navbar.less"
   ],
   "js": [],
   "customizerUrl": "<none>"
