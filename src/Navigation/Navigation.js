@@ -1,24 +1,29 @@
-import React, { Fragment } from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react'
+import { Navbar, Nav, NavItem } from 'react-bootstrap'
 import './Navigation.css'
 
 const Navigation = () => (
-  <Fragment>
-    <div className='logo'>
-      <div>
-        <div><Link to='/'>Recolada&nbsp;Group</Link></div>
-      </div>
-    </div>
-    <header>
-      <nav>
-        <ul>
-          <li><Link to='#software'>Software</Link></li>
-          <li><Link to='#gis'>GIS</Link></li>
-          <li><Link to='#cartography'>Cartography</Link></li>
-        </ul>
-      </nav>
-    </header>
-  </Fragment>
+  <Navbar fluid collapseOnSelect>
+    <Navbar.Header>
+      <Navbar.Brand>
+        <a href="/">Recolada Group</a>
+      </Navbar.Brand>
+      <Navbar.Toggle />
+    </Navbar.Header>
+    <Navbar.Collapse>
+      <Nav pullRight>
+        <NavItem eventKey={1} href="#software">
+          Software
+        </NavItem>
+        <NavItem eventKey={2} href="#gis">
+          GIS
+        </NavItem>
+        <NavItem eventKey={2} href="#cartography">
+          Cartography
+        </NavItem>
+      </Nav>
+    </Navbar.Collapse>
+  </Navbar>
 )
 
 export default Navigation

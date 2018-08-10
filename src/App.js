@@ -11,7 +11,7 @@ const offsetTop = component => ReactDOM.findDOMNode(component).offsetTop
 
 class App extends Component {
   componentDidMount() {
-    const { location: { pathname, hash } } = this.props
+    const { location: { hash } } = this.props
     if (hash === '#software') {
       scrollTo(this.software, 'instant')
     }
@@ -23,7 +23,7 @@ class App extends Component {
     }
   }
   componentDidUpdate() {
-    const { location: { pathname, hash } } = this.props
+    const { location: { hash } } = this.props
     if (hash === '#software') {
       scrollTo(this.software, 'smooth')
     }
@@ -63,7 +63,7 @@ class App extends Component {
         <div className='parallax appsbg halfheight'>
         </div>
         <div className='row' ref={ref => this.gis = ref}>
-          <div class='col-sm-12'>
+          <div className='col-sm-12'>
             <h2>GIS consulting</h2>
             <p>
               Morbi sollicitudin eros nec eros auctor, vitae imperdiet nisl bibendum. Proin in nunc nibh. Maecenas venenatis lobortis dictum. Donec nec semper massa. Etiam tincidunt sodales neque ut pulvinar. Sed pharetra ante sed vestibulum posuere. Pellentesque mollis neque viverra mauris efficitur, a consectetur purus porttitor. Aenean convallis odio sed est pharetra, dignissim congue turpis pharetra. Nullam a posuere neque, a facilisis mauris. Sed eget rhoncus velit. Pellentesque vel ante sit amet ipsum blandit scelerisque quis vel ligula. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam erat volutpat. Morbi gravida quam ac tellus venenatis tempor. Vestibulum eget felis risus. In hac habitasse platea dictumst.
@@ -73,7 +73,7 @@ class App extends Component {
         <div className='parallax cartographybg halfheight'>
         </div>
         <div className='row' ref={ref => this.cartography = ref}>
-          <div class='col-sm-12'>
+          <div className='col-sm-12'>
             <h2>Custom Cartography</h2>
             <p>
               Pellentesque id purus magna. Nunc risus lorem, convallis quis risus vel, malesuada tincidunt massa. Morbi augue urna, interdum vel arcu eu, feugiat rutrum nulla. Aenean et ex a nisl sodales ultricies. Nam vestibulum porta nisl. Nullam id purus vitae magna pulvinar varius consequat non nunc. Vestibulum eget rutrum erat. Vivamus vel dui facilisis, sodales erat vel, rutrum neque. Proin risus velit, dignissim ut ullamcorper eu, consectetur ac odio. Vestibulum pulvinar sem non urna fermentum malesuada. Etiam pulvinar, quam auctor sollicitudin maximus, massa quam pharetra dolor, eget varius ipsum ligula non ipsum. Vestibulum sed diam sit amet tellus faucibus sollicitudin. Praesent laoreet nisi nunc. Cras posuere ornare lorem, sit amet lobortis nunc congue sit amet. Ut nec lorem vitae libero venenatis facilisis. Aliquam erat volutpat.

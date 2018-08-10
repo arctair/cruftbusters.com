@@ -24,23 +24,23 @@ const injectClassName = props => ({ ...props, className: 'technologies ' + props
 
 const Technologies = props => (
   <div {...injectClassName(props)}>
-    <img src={angularLogo} title='Angular'/>
-    <img src={reactLogo} title='React'/>
-    <img src={nodeLogo} title='NodeJS'/>
-    <img src={webpackLogo} title='Webpack'/>
-    <img src={javaLogo} title='Java'/>
-    <img src={scalaLogo} title='Scala'/>
-    <img src={jettyLogo} title='Jetty' />
-    <img src={rLogo} title='R'/>
-    <img src={pythonLogo} title='Python'/>
-    <img src={numpyLogo} title='NumPy'/>
-    <img src={scipyLogo} title='SciPy'/>
-    <img src={linuxLogo} title='GNU/Linux'/>
-    <img src={bashLogo} title='Bash'/>
-    <img src={gitLogo} title='Git'/>
-    <img src={mikrotikLogo} title='Mikrotik'/>
-    <img src={awsLogo} title='Amazon Web Services'/>
-    <img src={digitaloceanLogo} title='Digital Ocean'/>
+    <img src={angularLogo} title='Angular' alt='Angular'/>
+    <img src={reactLogo} title='React' alt='React'/>
+    <img src={nodeLogo} title='NodeJS' alt='NodeJS'/>
+    <img src={webpackLogo} title='Webpack' alt='Webpack'/>
+    <img src={javaLogo} title='Java' alt='Java'/>
+    <img src={scalaLogo} title='Scala' alt='Scala'/>
+    <img src={jettyLogo} title='Jetty' alt='Jetty' />
+    <img src={rLogo} title='R' alt='R'/>
+    <img src={pythonLogo} title='Python' alt='Python'/>
+    <img src={numpyLogo} title='NumPy' alt='NumPy'/>
+    <img src={scipyLogo} title='SciPy' alt='SciPy'/>
+    <img src={linuxLogo} title='GNU/Linux' alt='GNU/Linux'/>
+    <img src={bashLogo} title='Bash' alt='Bash'/>
+    <img src={gitLogo} title='Git' alt='Git'/>
+    <img src={mikrotikLogo} title='Mikrotik' alt='Mikrotik'/>
+    <img src={awsLogo} title='Amazon Web Services' alt='Amazon Web Services'/>
+    <img src={digitaloceanLogo} title='Digital Ocean' alt='Digital Ocean'/>
   </div>
 )
 
