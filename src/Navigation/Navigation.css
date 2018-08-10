@@ -3,6 +3,7 @@
   border: none;
   padding-left: 4em;
   padding-right: 4em;
+  box-shadow: none;
 }
 
 .navbar a {
