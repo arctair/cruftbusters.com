@@ -16,6 +16,6 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "deploy": "aws s3 sync build s3://recolada.arctair.com --delete"
+    "deploy": "aws s3 sync build s3://cruftbusters.arctair.com --delete"
   }
 }
