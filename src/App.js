@@ -44,12 +44,16 @@ class App extends Component {
           </section>
         </div>
         <div className='row' ref={ref => this.software = ref}>
-          <div className='col-sm-6'>
-            <h2>Software Consulting</h2>
+          <div className='col-sm-6 vcenter'>
+            <h2>Software</h2>
             <p>
               Recolada Group specializes in software that tells stories and
               automates work. When you work with us, your users will be happy
               they are using software fortified around their needs.
+            </p>
+            <p>
+              Is your source code difficult to maintain and understand? We plan
+              or conduct code refactorings. Contact us to map out a refactoring.
             </p>
             <p>
               We have experience with a variety of technologies and are committed
@@ -58,13 +62,20 @@ class App extends Component {
               ecosystem but don't see it listed? Ask us about it!
             </p>
           </div>
-          <Technologies className='col-sm-6'/>
+          <Technologies className='col-sm-6 vcenter'/>
         </div>
         <div className='parallax appsbg halfheight'>
         </div>
         <div className='row' ref={ref => this.gis = ref}>
-          <div className='col-sm-12'>
-            <h2>GIS consulting</h2>
+          <div className='col-sm-6' />
+          <div className='col-sm-6'>
+            <h2>GIS</h2>
+            <p>
+              Recolada Group strives to aid spatial awareness and understanding
+              through the power of modern GIS. If your application, pipeline, or
+              idea has a spatial component, we want to be involved in helping
+              it reach its full potential.
+            </p>
             <p>
               Morbi sollicitudin eros nec eros auctor, vitae imperdiet nisl bibendum. Proin in nunc nibh. Maecenas venenatis lobortis dictum. Donec nec semper massa. Etiam tincidunt sodales neque ut pulvinar. Sed pharetra ante sed vestibulum posuere. Pellentesque mollis neque viverra mauris efficitur, a consectetur purus porttitor. Aenean convallis odio sed est pharetra, dignissim congue turpis pharetra. Nullam a posuere neque, a facilisis mauris. Sed eget rhoncus velit. Pellentesque vel ante sit amet ipsum blandit scelerisque quis vel ligula. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam erat volutpat. Morbi gravida quam ac tellus venenatis tempor. Vestibulum eget felis risus. In hac habitasse platea dictumst.
             </p>
