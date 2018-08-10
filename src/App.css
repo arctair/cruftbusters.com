@@ -1,28 +1,103 @@
-.App {
-  text-align: center;
+.container-fluid {
+  padding: 0;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.row {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.75em;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
+@media only screen and (min-width : 320px) {
+  .row {
+    padding: 2em;
+  }
+}
+
+@media only screen and (min-width : 480px) {
+  .row {
+    padding: 2em;
+  }
+}
+
+@media only screen and (min-width : 768px) {
+  .row {
+    padding: 4em;
+  }
+}
+
+@media only screen and (min-width : 992px) {
+  .row {
+    padding: 6em;
+  }
+}
+
+@media only screen and (min-width : 1200px) {
+  .row {
+    padding: 8em;
+  }
+}
+
+.fullheight {
+  height: 100%;
+}
+
+.halfheight {
+  height: 50%;
+}
+
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+section {
+  position: relative;
+  height: 100%;
+}
+
+section h1 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -75%);
+  font-family: 'Permanent Marker', cursive;
+  font-size: 8vmax;
   color: white;
 }
 
-.App-title {
-  font-size: 1.5em;
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 300;
 }
 
-.App-intro {
-  font-size: large;
+.atlasbg {
+  background-image: url('./img/atlas.jpg');
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, .5);
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.appsbg {
+  background-image: url('./img/apps.jpg');
 }
+
+.cartographybg {
+  background-image: url('./img/cartographybg.png');
+}
+
+footer {
+  background-color: #444;
+  color: #888;
+  padding: 2em;
+}
+
+footer div {
+  margin: 1em;
+  text-align: center;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Lato:400,900|Permanent+Marker|Open+Sans');

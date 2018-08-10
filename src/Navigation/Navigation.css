@@ -1,0 +1,31 @@
+.logo {
+  position: absolute;
+  margin: 2em;
+}
+
+nav ul {
+  display: block;
+  position: absolute;
+  margin: 2em;
+  right: 1em;
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 1.5em;
+}
+
+.logo a, nav a {
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  font-size: 1.25em;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.logo a:hover, nav a:hover {
+  color: lightgray;
+}
