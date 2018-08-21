@@ -92,8 +92,18 @@ h1, h2, h3, h4, h5, h6 {
   background-image: url('./img/apps.jpg');
 }
 
+.powerlinebg {
+  background-image: url('./img/powerline.jpg');
+}
+
 .cartographybg {
-  background-image: url('./img/cartographybg.png');
+  background-image: url('./img/map.jpg');
+}
+
+.shapefile-quote {
+  text-align: center;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 3em;
 }
 
 .contact {

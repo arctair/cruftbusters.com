@@ -68,29 +68,38 @@ class App extends Component {
         <div className='parallax appsbg halfheight'>
         </div>
         <div className='row' ref={ref => this.gis = ref}>
-          <div className='col-sm-6' />
-          <div className='col-sm-6'>
+          <div className='col-sm-6 vcenter shapefile-quote'>
+            We put the shape in shapefile
+          </div>
+          <div className='col-sm-6 vcenter'>
             <h2>GIS</h2>
             <p>
               Cruftbusters strives to aid spatial awareness and understanding
               through the power of modern GIS. If your application, pipeline, or
-              idea has a spatial component, we want to be involved in helping
-              it reach its full potential.
+              idea has a spatial component, we will unleash its full potential.
             </p>
             <p>
-              Morbi sollicitudin eros nec eros auctor, vitae imperdiet nisl bibendum. Proin in nunc nibh. Maecenas venenatis lobortis dictum. Donec nec semper massa. Etiam tincidunt sodales neque ut pulvinar. Sed pharetra ante sed vestibulum posuere. Pellentesque mollis neque viverra mauris efficitur, a consectetur purus porttitor. Aenean convallis odio sed est pharetra, dignissim congue turpis pharetra. Nullam a posuere neque, a facilisis mauris. Sed eget rhoncus velit. Pellentesque vel ante sit amet ipsum blandit scelerisque quis vel ligula. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam erat volutpat. Morbi gravida quam ac tellus venenatis tempor. Vestibulum eget felis risus. In hac habitasse platea dictumst.
+              We are well acquainted with the ArcGIS stack as well as open
+              source desktop mapping and analysis tools. Cruftbusters will help
+              you solidify procedure and infrastructure in your business or
+              department so that you can answer big questions the instant they
+              need answers.
             </p>
           </div>
         </div>
-        <div className='parallax cartographybg halfheight'>
+        <div className='parallax powerlinebg halfheight'>
         </div>
         <div className='row' ref={ref => this.cartography = ref}>
-          <div className='col-sm-12'>
+          <div className='col-sm-6'>
             <h2>Custom Cartography</h2>
             <p>
-              Pellentesque id purus magna. Nunc risus lorem, convallis quis risus vel, malesuada tincidunt massa. Morbi augue urna, interdum vel arcu eu, feugiat rutrum nulla. Aenean et ex a nisl sodales ultricies. Nam vestibulum porta nisl. Nullam id purus vitae magna pulvinar varius consequat non nunc. Vestibulum eget rutrum erat. Vivamus vel dui facilisis, sodales erat vel, rutrum neque. Proin risus velit, dignissim ut ullamcorper eu, consectetur ac odio. Vestibulum pulvinar sem non urna fermentum malesuada. Etiam pulvinar, quam auctor sollicitudin maximus, massa quam pharetra dolor, eget varius ipsum ligula non ipsum. Vestibulum sed diam sit amet tellus faucibus sollicitudin. Praesent laoreet nisi nunc. Cras posuere ornare lorem, sit amet lobortis nunc congue sit amet. Ut nec lorem vitae libero venenatis facilisis. Aliquam erat volutpat.
+              We love beautiful maps that emphasize critical detail. Whether
+              you need a bulk order of specialized print maps or a highly
+              available and accessible interactive web map, we are here to meet
+              your cartography needs.
             </p>
           </div>
+          <div className='col-sm-6' />
         </div>
         <div className='parallax cartographybg halfheight'>
         </div>
