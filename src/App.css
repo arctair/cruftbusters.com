@@ -96,6 +96,26 @@ h1, h2, h3, h4, h5, h6 {
   background-image: url('./img/cartographybg.png');
 }
 
+.contact {
+  display: flex;
+  justify-content: center;
+}
+
+.contact a {
+  flex: 0;
+  margin-bottom: -0.5em;
+  padding-left: 0.125em;
+  padding-right: 0.125em;
+  font-size: 2em;
+  text-decoration: none;
+  color: inherit;
+  transition: color 250ms ease;
+}
+
+.contact a:hover {
+  color: white;
+}
+
 footer {
   background-color: #444;
   color: #888;

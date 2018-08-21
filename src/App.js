@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import { withRouter } from 'react-router-dom'
 import './App.css'
+import { FaGithub, FaEnvelope } from 'react-icons/fa'
 
 import Navigation from './Navigation'
 import Technologies from './Technologies'
@@ -96,7 +97,10 @@ class App extends Component {
         <footer>
           <div>Streamlining storytelling</div>
           <div>Contact Us</div>
-          <div>[=] [=] [=] [=]</div>
+          <div className='contact'>
+            <a href='https://github.com/arctair/cruftbusters.arctair.com'><FaGithub /></a>
+            <a href='mailto:jtyler_@outlook.com'><FaEnvelope /></a>
+          </div>
           <div className='copyright'>
             © 2018 Cruftbusters. All Rights Reserved
           </div>
