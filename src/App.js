@@ -68,7 +68,7 @@ class App extends Component {
         <div className='parallax appsbg halfheight'>
         </div>
         <div className='row' ref={ref => this.gis = ref}>
-          <div className='col-sm-6 vcenter shapefile-quote'>
+          <div className='col-sm-6 vcenter quote'>
             We put the shape in shapefile
           </div>
           <div className='col-sm-6 vcenter'>
@@ -90,7 +90,7 @@ class App extends Component {
         <div className='parallax powerlinebg halfheight'>
         </div>
         <div className='row' ref={ref => this.cartography = ref}>
-          <div className='col-sm-6'>
+          <div className='col-sm-6 vcenter'>
             <h2>Custom Cartography</h2>
             <p>
               We love beautiful maps that emphasize critical detail. Whether
@@ -99,7 +99,9 @@ class App extends Component {
               your cartography needs.
             </p>
           </div>
-          <div className='col-sm-6' />
+          <div className='col-sm-6 vcenter quote'>
+            Functional and beautiful cartography at your fingertips
+          </div>
         </div>
         <div className='parallax cartographybg halfheight'>
         </div>
