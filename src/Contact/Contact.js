@@ -24,6 +24,7 @@ class Contact extends Component {
     this.onSubmitDuplicate = this.onSubmitDuplicate.bind(this)
     this.setSending = this.setSending.bind(this)
     this.sendPayload = this.sendPayload.bind(this)
+    this.handleResponse = this.handleResponse.bind(this)
     this.onSubmitSuccess = this.onSubmitSuccess.bind(this)
     this.onSubmitFail = this.onSubmitFail.bind(this)
   }
@@ -60,9 +61,24 @@ class Contact extends Component {
     }))
   }
   sendPayload(payload) {
-    let { REACT_APP_BACKEND_URL: url } = process.env
-    fetch(url, { method: 'POST', body: payload })
-      .then(this.onSubmitSuccess, this.onSubmitFail)
+    const { REACT_APP_BACKEND_URL: url } = process.env
+    const options = {
+      method: 'POST',
+      body: JSON.stringify(payload),
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    }
+    fetch(url, options)
+      .then(this.handleResponse, this.onSubmitFail)
+  }
+  handleResponse(response) {
+    if (response.status === 204) {
+      this.onSubmitSuccess()
+    }
+    else {
+      this.onSubmitFail()
+    }
   }
   onSubmitSuccess() {
     this.setState(() => ({
