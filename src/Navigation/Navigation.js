@@ -12,14 +12,17 @@ const Navigation = () => (
     </Navbar.Header>
     <Navbar.Collapse>
       <Nav pullRight>
-        <NavItem eventKey={1} href="#software">
+        <NavItem eventKey={1} href="/#software">
           Software
         </NavItem>
-        <NavItem eventKey={2} href="#gis">
+        <NavItem eventKey={2} href="/#gis">
           GIS
         </NavItem>
-        <NavItem eventKey={2} href="#cartography">
+        <NavItem eventKey={3} href="/#cartography">
           Cartography
+        </NavItem>
+        <NavItem eventKey={4} href="/contact">
+          Contact
         </NavItem>
       </Nav>
     </Navbar.Collapse>

@@ -1,0 +1,16 @@
+footer {
+  background-color: #444;
+  color: #888;
+  padding: 2em;
+}
+
+footer.bottom {
+  bottom: 0;
+  width: 100%;
+  position: absolute;
+}
+
+footer div {
+  margin: 1em;
+  text-align: center;
+}

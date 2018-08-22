@@ -1,0 +1,38 @@
+.form-container {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 2em;
+  border-radius: 1em;
+}
+
+.form-container .input-group {
+  margin: 0.25em;
+  width: 100%;
+}
+
+.form-container .input-group-addon {
+  min-width: 8em;
+  text-align: left;
+  font-weight: bold;
+  padding-left: 1.25em;
+}
+
+.form-container svg {
+  position: absolute;
+  top: 50%;
+  left: 1em;
+  transform: translateY(-60%);
+}
+
+.form-container textarea {
+  resize: none;
+}
+
+.form-container .btn {
+  font-size: 1.25em;
+  font-weight: bold;
+  background-color: lightgray;
+}
+
+.form-container .btn:hover {
+  background-color: white;
+}
