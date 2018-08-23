@@ -1,7 +1,3 @@
-.container-fluid {
-  padding: 0;
-}
-
 .atlasbg {
   background-image: url('./img/atlas.jpg');
   background-blend-mode: darken;

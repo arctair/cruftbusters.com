@@ -6,6 +6,7 @@ import './Home.css'
 
 import Footer from '../Footer'
 import Navigation from '../Navigation'
+import SingularRow from '../SingularRow'
 import Technologies from '../Technologies'
 
 const scrollTo = (component, behavior) => window.scrollTo({ top: component ? offsetTop(component) : 0, behavior})
@@ -45,7 +46,7 @@ class Home extends Component {
             <h1>Tell your story</h1>
           </section>
         </div>
-        <div className='row' ref={ref => this.software = ref}>
+        <SingularRow ref={ref => this.software = ref}>
           <div className='col-sm-6 vcenter'>
             <h2>Software</h2>
             <p>
@@ -64,11 +65,10 @@ class Home extends Component {
               ecosystem but don't see it listed? Ask us about it!
             </p>
           </div>
-          <Technologies className='col-sm-6 vcenter'/>
-        </div>
-        <div className='parallax appsbg halfheight'>
-        </div>
-        <div className='row' ref={ref => this.gis = ref}>
+          <Technologies className='col-sm-6 vcenter' />
+        </SingularRow>
+        <div className='parallax appsbg halfheight' />
+        <SingularRow ref={ref => this.gis = ref}>
           <div className='col-sm-6 vcenter quote'>
             We put the shape in shapefile
           </div>
@@ -87,10 +87,9 @@ class Home extends Component {
               need answers.
             </p>
           </div>
-        </div>
-        <div className='parallax powerlinebg halfheight'>
-        </div>
-        <div className='row' ref={ref => this.cartography = ref}>
+        </SingularRow>
+        <div className='parallax powerlinebg halfheight' />
+        <SingularRow ref={ref => this.cartography = ref}>
           <div className='col-sm-6 vcenter'>
             <h2>Custom Cartography</h2>
             <p>
@@ -103,9 +102,8 @@ class Home extends Component {
           <div className='col-sm-6 vcenter quote'>
             Functional and beautiful cartography at your fingertips
           </div>
-        </div>
-        <div className='parallax cartographybg halfheight'>
-        </div>
+        </SingularRow>
+        <div className='parallax cartographybg halfheight' />
         <Footer />
       </Fragment>
     )
