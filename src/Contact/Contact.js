@@ -96,9 +96,9 @@ class Contact extends Component {
   render() {
     const { failure, duplicate, success, sending } = this.state
     return (
-      <div className='atlasbg fullheight'>
+      <div className='atlasbg fullheight container-flex'>
         <Navigation />
-        <div className='container-fluid'>
+        <div className='container-fluid flex-stretch'>
           <div className='row'>
             <div className='col-sm-12 col-md-6 col-md-offset-3 form-container clearfix'>
               <h1>Contact Us</h1>
@@ -159,7 +159,7 @@ class Contact extends Component {
             </div>
           </div>
         </div>
-        <Footer className='bottom' />
+        <Footer />
       </div>
     )
   }

@@ -1,3 +1,12 @@
+.container-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-stretch {
+  flex: 1;
+}
+
 .form-container {
   background-color: rgba(255, 255, 255, 0.5);
   padding: 2em;
