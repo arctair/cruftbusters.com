@@ -17,8 +17,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "aws:sync": "aws s3 sync build s3://cruftbusters.arctair.com --delete",
-    "aws:invalidate": "aws cloudfront create-invalidation --distribution-id EYL3PKWHVDGNC --paths \"/*\"",
+    "aws:sync": "aws s3 sync build s3://cruftbusters.com --delete",
+    "aws:invalidate": "aws cloudfront create-invalidation --distribution-id E3P0VPLWYNJVFR --paths \"/*\"",
     "deploy": "npm run aws:sync && npm run aws:invalidate"
   }
 }
