@@ -13,6 +13,10 @@
   font-size: 1.5em;
   letter-spacing: 1px;
   text-transform: uppercase;
+  /* override bootstrap */
+  background-color: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
   color: white !important;
 }
 

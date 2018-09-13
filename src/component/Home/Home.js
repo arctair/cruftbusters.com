@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from 'react'
+import ReactDOM from 'react-dom'
 import { withRouter } from 'react-router-dom'
 
 import './Home.css'
@@ -9,6 +10,21 @@ import SingularRow from 'component/SingularRow'
 import Tile from 'component/Tile'
 
 class Home extends Component {
+  componentDidUpdate() {
+    this.tryScrollTo()
+  }
+  componentDidMount() {
+    this.tryScrollTo()
+  }
+  tryScrollTo() {
+    let hash = this.props.location.hash.replace('#', '');
+    if (hash) {
+      let node = ReactDOM.findDOMNode(this.refs[hash]);
+      if (node) {
+        node.scrollIntoView();
+      }
+    }
+  }
   render() {
     return (
       <Fragment>
@@ -18,7 +34,7 @@ class Home extends Component {
             <h1>Tell your story</h1>
           </section>
         </div>
-        <SingularRow id='software'>
+        <SingularRow id='software' ref='software'>
           <div className='col-sm-12 col-md-push-8 col-md-4'>
             <h2>Software</h2>
             <p>
@@ -52,7 +68,7 @@ class Home extends Component {
           </div>
         </SingularRow>
         <div className='parallax appsbg halfheight' />
-        <SingularRow id='networking'>
+        <SingularRow id='networking' ref='networking'>
           <div className='col-sm-12 col-md-4'>
             <h2>Networking</h2>
             <p>
@@ -81,7 +97,7 @@ class Home extends Component {
           </div>
         </SingularRow>
         <div className='parallax databg halfheight' />
-        <SingularRow id='gis'>
+        <SingularRow id='gis' ref='gis'>
           <div className='col-sm-12 col-md-push-8 col-md-4'>
             <h2>Geographic Information Systems</h2>
             <p>
@@ -111,7 +127,7 @@ class Home extends Component {
           </div>
         </SingularRow>
         <div className='parallax powerlinebg halfheight' />
-        <SingularRow id='cartography'>
+        <SingularRow id='cartography' ref='cartography'>
           <div className='col-sm-12 col-md-4'>
             <h2>Cartography</h2>
             <p>
