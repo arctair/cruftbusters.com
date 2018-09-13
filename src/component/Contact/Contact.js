@@ -4,9 +4,9 @@ import qs from 'query-string'
 
 import './Contact.css'
 
-import Footer from '../Footer'
-import Navigation from '../Navigation'
-import SingularRow from '../SingularRow'
+import Footer from 'component/Footer'
+import Navigation from 'component/Navigation'
+import SingularRow from 'component/SingularRow'
 
 const hide = (classes, show) => classes + (show ? '' : ' hidden')
 const initialState = {

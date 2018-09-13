@@ -3,10 +3,10 @@ import { withRouter } from 'react-router-dom'
 
 import './Home.css'
 
-import Footer from '../Footer'
-import Navigation from '../Navigation'
-import SingularRow from '../SingularRow'
-import Tile from '../Tile'
+import Footer from 'component/Footer'
+import Navigation from 'component/Navigation'
+import SingularRow from 'component/SingularRow'
+import Tile from 'component/Tile'
 
 class Home extends Component {
   render() {

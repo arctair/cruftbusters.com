@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import { Route, Switch, withRouter } from 'react-router-dom'
 
-import Contact from './Contact'
-import Home from './Home'
+import Contact from 'component/Contact'
+import Home from 'component/Home'
 
 class App extends Component {
   render() {

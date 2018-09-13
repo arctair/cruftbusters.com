@@ -71,23 +71,23 @@ h1, h2 {
 }
 
 .atlasbg {
-  background-image: url('../img/atlas.jpg');
+  background-image: url('./background/atlas.jpg');
   background-blend-mode: darken;
   background-color: rgba(0, 0, 0, .5);
 }
 
 .appsbg {
-  background-image: url('../img/apps.jpg');
+  background-image: url('./background/apps.jpg');
 }
 
 .databg {
-  background-image: url('../img/radio.jpg');
+  background-image: url('./background/radio.jpg');
 }
 
 .powerlinebg {
-  background-image: url('../img/powerline.jpg');
+  background-image: url('./background/powerline.jpg');
 }
 
 .cartographybg {
-  background-image: url('../img/map.jpg');
+  background-image: url('./background/map.jpg');
 }
