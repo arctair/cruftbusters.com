@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { Route, Switch, withRouter } from 'react-router-dom'
-import './App.css'
 
 import Contact from './Contact'
 import Home from './Home'

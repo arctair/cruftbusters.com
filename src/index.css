@@ -7,3 +7,5 @@ body {
 html, body, #root, .App {
   height: 100%;
 }
+
+@import url('https://fonts.googleapis.com/css?family=Lato:400,900|Permanent+Marker|Open+Sans');

@@ -104,3 +104,21 @@ h1, h2, h3, h4, h5, h6 {
 .contact a:hover {
   color: white;
 }
+
+.atlasbg {
+  background-image: url('../img/atlas.jpg');
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.appsbg {
+  background-image: url('../img/apps.jpg');
+}
+
+.powerlinebg {
+  background-image: url('../img/powerline.jpg');
+}
+
+.cartographybg {
+  background-image: url('../img/map.jpg');
+}
