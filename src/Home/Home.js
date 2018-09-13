@@ -1,5 +1,4 @@
 import React, { Component, Fragment } from 'react'
-import ReactDOM from 'react-dom'
 import { withRouter } from 'react-router-dom'
 
 import './Home.css'
@@ -9,34 +8,7 @@ import Navigation from '../Navigation'
 import SingularRow from '../SingularRow'
 import Technologies from '../Technologies'
 
-const scrollTo = (component, behavior) => window.scrollTo({ top: component ? offsetTop(component) : 0, behavior})
-const offsetTop = component => ReactDOM.findDOMNode(component).offsetTop
-
 class Home extends Component {
-  componentDidMount() {
-    const { location: { hash } } = this.props
-    if (hash === '#software') {
-      scrollTo(this.software, 'instant')
-    }
-    else if (hash === '#gis') {
-      scrollTo(this.gis, 'instant')
-    }
-    else if (hash === '#cartography') {
-      scrollTo(this.cartography, 'instant')
-    }
-  }
-  componentDidUpdate() {
-    const { location: { hash } } = this.props
-    if (hash === '#software') {
-      scrollTo(this.software, 'smooth')
-    }
-    else if (hash === '#gis') {
-      scrollTo(this.gis, 'smooth')
-    }
-    else if (hash === '#cartography') {
-      scrollTo(this.cartography, 'smooth')
-    }
-  }
   render() {
     return (
       <Fragment>
@@ -46,7 +18,7 @@ class Home extends Component {
             <h1>Tell your story</h1>
           </section>
         </div>
-        <SingularRow ref={ref => this.software = ref}>
+        <SingularRow id='software'>
           <div className='col-sm-6 vcenter'>
             <h2>Software</h2>
             <p>
@@ -68,7 +40,7 @@ class Home extends Component {
           <Technologies className='col-sm-6 vcenter' />
         </SingularRow>
         <div className='parallax appsbg halfheight' />
-        <SingularRow ref={ref => this.gis = ref}>
+        <SingularRow id='gis'>
           <div className='col-sm-6 vcenter quote'>
             We put the shape in shapefile
           </div>
@@ -89,7 +61,7 @@ class Home extends Component {
           </div>
         </SingularRow>
         <div className='parallax powerlinebg halfheight' />
-        <SingularRow ref={ref => this.cartography = ref}>
+        <SingularRow id='cartography'>
           <div className='col-sm-6 vcenter'>
             <h2>Custom Cartography</h2>
             <p>
