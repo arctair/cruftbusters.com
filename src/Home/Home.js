@@ -6,7 +6,7 @@ import './Home.css'
 import Footer from '../Footer'
 import Navigation from '../Navigation'
 import SingularRow from '../SingularRow'
-import Technologies from '../Technologies'
+import Tile from '../Tile'
 
 class Home extends Component {
   render() {
@@ -19,33 +19,71 @@ class Home extends Component {
           </section>
         </div>
         <SingularRow id='software'>
-          <div className='col-sm-6 vcenter'>
+          <div className='col-sm-12 col-md-push-8 col-md-4'>
             <h2>Software</h2>
             <p>
-              Cruftbusters specializes in software that tells stories and
-              automates work. When you work with us, your users will be happy
-              they are using software fortified around their needs.
+              You see results with Cruftbusters because we know how to use
+              proven techniques when working with software. We strike a balance
+              between best practices and innovative touch.
             </p>
             <p>
-              Is your source code difficult to maintain and understand? We plan
-              or conduct code refactorings. Contact us to map out a refactoring.
+              We value continued maintenance of product that is in
+              continued use. We can help with analyzation, refactoring, and
+              extending your product.
             </p>
             <p>
-              We have experience with a variety of technologies and are committed
-              to finding the best tools and strategies for every task. Are you
-              interested in exploring how a technology can integrate with your
-              ecosystem but don't see it listed? Ask us about it!
+              Do you subscribe to "people before things"? We are committed to the
+              people that compose a product. Test our commitment by scheduling
+              a training session between your team or users and our training team.
             </p>
           </div>
-          <Technologies className='col-sm-6 vcenter' />
+          <div className='col-sm-12 col-md-pull-4 col-md-7'>
+            <SingularRow className='theme-1' noPadding>
+              <Tile header='Deployment' />
+              <Tile header='Scaling' />
+              <Tile header='Static Web Pages' />
+              <Tile header='Single Page Web Applications' />
+              <Tile header='Refactoring' />
+              <Tile header='Database Analyzation' />
+              <Tile header='Data Pipelining' />
+              <Tile header='Software Training' />
+              <Tile header='Product Training' />
+            </SingularRow>
+          </div>
         </SingularRow>
         <div className='parallax appsbg halfheight' />
-        <SingularRow id='gis'>
-          <div className='col-sm-6 vcenter quote'>
-            We put the shape in shapefile
+        <SingularRow id='networking'>
+          <div className='col-sm-12 col-md-4'>
+            <h2>Networking</h2>
+            <p>
+              We simply love networking! We expect that to rub off on you...
+              With Cruftbusters, your networking needs covered from ground to
+              cloud and beyond.
+            </p>
+            <p>
+              Security, availability, and maintainability are some of our core
+              values. This becomes evident in our networking configurations.
+              We offer services in planning, deploying, and maintaining your
+              networks.
+            </p>
           </div>
-          <div className='col-sm-6 vcenter'>
-            <h2>GIS</h2>
+          <div className='col-sm-12 col-md-push-1 col-md-7'>
+            <SingularRow className='theme-2' noPadding>
+              <Tile header='Small Home and Office' />
+              <Tile header='VPN' />
+              <Tile header='Work From Home' />
+              <Tile header='Wireless Engineering' />
+              <Tile header='Networking Training' />
+              <Tile header='Network Troubleshooting' />
+              <Tile header='Endpoint Management' />
+              <Tile header='Security' />
+            </SingularRow>
+          </div>
+        </SingularRow>
+        <div className='parallax databg halfheight' />
+        <SingularRow id='gis'>
+          <div className='col-sm-12 col-md-push-8 col-md-4'>
+            <h2>Geographic Information Systems</h2>
             <p>
               Cruftbusters strives to aid spatial awareness and understanding
               through the power of modern GIS. If your application, pipeline, or
@@ -59,20 +97,35 @@ class Home extends Component {
               need answers.
             </p>
           </div>
+          <div className='col-sm-12 col-md-pull-4 col-md-7'>
+            <SingularRow className='theme-3' noPadding>
+              <Tile header='ArcGIS Desktop' />
+              <Tile header='ArcGIS Server' />
+              <Tile header='QGIS' />
+              <Tile header='GIS Software Engineering' />
+              <Tile header='Custom Integration' />
+              <Tile header='GIS Training' />
+              <Tile header='Digitization' />
+              <Tile header='GNSS/GPS'/>
+            </SingularRow>
+          </div>
         </SingularRow>
         <div className='parallax powerlinebg halfheight' />
         <SingularRow id='cartography'>
-          <div className='col-sm-6 vcenter'>
-            <h2>Custom Cartography</h2>
+          <div className='col-sm-12 col-md-4'>
+            <h2>Cartography</h2>
             <p>
-              We love beautiful maps that emphasize critical detail. Whether
-              you need a bulk order of specialized print maps or a highly
-              available and accessible interactive web map, we are here to meet
-              your cartography needs.
+              We appreciate beautiful maps that emphasize critical detail.
+              Cruftbusters can create professional maps to convey your narrative
+              in the format you need.
             </p>
           </div>
-          <div className='col-sm-6 vcenter quote'>
-            Functional and beautiful cartography at your fingertips
+          <div className='col-sm-12 col-md-push-1 col-md-7'>
+            <SingularRow className='theme-4' noPadding>
+              <Tile header='Print Maps' />
+              <Tile header='Interactive Web Maps' />
+              <Tile header='Shapefiles' />
+            </SingularRow>
           </div>
         </SingularRow>
         <div className='parallax cartographybg halfheight' />

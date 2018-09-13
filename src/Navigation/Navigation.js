@@ -15,13 +15,16 @@ const Navigation = () => (
         <NavItem eventKey={1} href="/#software">
           Software
         </NavItem>
-        <NavItem eventKey={2} href="/#gis">
+        <NavItem eventKey={2} href="/#networking">
+          Networking
+        </NavItem>
+        <NavItem eventKey={3} href="/#gis">
           GIS
         </NavItem>
-        <NavItem eventKey={3} href="/#cartography">
+        <NavItem eventKey={4} href="/#cartography">
           Cartography
         </NavItem>
-        <NavItem eventKey={4} href="/contact">
+        <NavItem eventKey={5} href="/contact">
           Contact
         </NavItem>
       </Nav>

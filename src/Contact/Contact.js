@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { FaEnvelope, FaPhone } from 'react-icons/fa'
+import qs from 'query-string'
 
 import './Contact.css'
 
@@ -96,6 +97,8 @@ class Contact extends Component {
   }
   render() {
     const { failure, duplicate, success, sending } = this.state
+    const { location: { search } } = this.props
+    const { subject } = qs.parse(search)
     return (
       <div className='atlasbg fullheight container-flex'>
         <Navigation />
@@ -143,6 +146,7 @@ class Contact extends Component {
                 id='inputSubject'
                 aria-describedby='subject-addon'
                 ref={e => this.inputSubject = e}
+                defaultValue={subject}
               />
             </div>
             <div className='input-group'>

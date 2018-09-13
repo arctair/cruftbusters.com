@@ -1,13 +1,6 @@
 .row {
   font-family: "Open Sans", sans-serif;
   line-height: 1.75em;
-  text-indent: 1em;
-}
-
-.vcenter {
-  display: inline-block;
-  vertical-align: middle;
-  float: none;
 }
 
 @media only screen and (min-width : 320px) {
@@ -67,42 +60,14 @@ section h1 {
   transform: translate(-50%, -75%);
   font-family: 'Permanent Marker', cursive;
   font-size: 8vmax;
+  text-align: center;
   color: white;
 }
 
-
-h1, h2, h3, h4, h5, h6 {
+h1, h2 {
   font-family: 'Lato', sans-serif;
   text-transform: uppercase;
-  text-align: center;
   font-weight: 300;
-}
-
-.quote {
-  text-align: center;
-  font-family: 'Permanent Marker', cursive;
-  font-size: 3em;
-  line-height: 1em;
-}
-
-.contact {
-  display: flex;
-  justify-content: center;
-}
-
-.contact a {
-  flex: 0;
-  margin-bottom: -0.5em;
-  padding-left: 0.125em;
-  padding-right: 0.125em;
-  font-size: 2em;
-  text-decoration: none;
-  color: inherit;
-  transition: color 250ms ease;
-}
-
-.contact a:hover {
-  color: white;
 }
 
 .atlasbg {
@@ -113,6 +78,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .appsbg {
   background-image: url('../img/apps.jpg');
+}
+
+.databg {
+  background-image: url('../img/radio.jpg');
 }
 
 .powerlinebg {
