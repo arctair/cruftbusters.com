@@ -11,9 +11,10 @@ footer div {
 
 footer a {
   color: inherit;
+  transition: color 200ms;
 }
 
 footer a:hover {
-  color: #844;
+  color: #FFFFFF;
   text-decoration: none;
 }
