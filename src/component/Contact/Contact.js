@@ -3,6 +3,7 @@ import { FaEnvelope, FaPhone } from 'react-icons/fa'
 
 import './Contact.css'
 
+import CloseButton from 'component/CloseButton'
 import ScreenPage from 'component/ScreenPage'
 
 const truncateAmpersand = s => {
@@ -107,11 +108,12 @@ class Contact extends Component {
   }
   render() {
     const { failure, duplicate, success, sending } = this.state
-    const { location: { search } } = this.props
+    const { location: { search }, history: { goBack } } = this.props
     const subject = subjectFrom(search)
     return (
       <ScreenPage>
         <div className='col-sm-12 col-md-offset-2 col-md-8 contact clearfix'>
+          <CloseButton goBack={goBack}/>
           <h2>Contact Us</h2>
           <br />
           <div className={hide('alert alert-danger', failure)}>

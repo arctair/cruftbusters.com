@@ -1,0 +1,11 @@
+.close-button {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  font-weight: 900;
+  font-size: 4em;
+  color: #CCCCCC;
+  /* default overrides */
+  border: none;
+  background-color: transparent;
+}

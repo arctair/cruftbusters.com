@@ -1,12 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+import CloseButton from 'component/CloseButton'
 import ScreenPage from 'component/ScreenPage'
 import Technologies from 'component/Technologies'
 
-const About = () => (
+const About = ({ history: { goBack }}) => (
   <ScreenPage>
     <div className='col-sm-12 col-md-offset-2 col-md-8 about'>
+      <CloseButton goBack={goBack}/>
       <h2>About Cruftbusters</h2>
       <br />
       <p>
