@@ -99,8 +99,8 @@ class Contact extends Component {
     const { subject } = qs.parse(search)
     return (
       <ScreenPage>
-        <div className='col-sm-12 col-md-6 col-md-offset-3 form-container clearfix'>
-          <h1>Contact Us</h1>
+        <div className='col-sm-12 col-md-offset-2 col-md-8 contact clearfix'>
+          <h2>Contact Us</h2>
           <br />
           <div className={hide('alert alert-danger', failure)}>
             There was an error sending your inquiry. You can try again
@@ -153,7 +153,7 @@ class Contact extends Component {
               ref={e => this.textareaBody = e}
             />
           </div>
-          <button onClick={this.onSubmit} className='btn pull-right'>
+          <button onClick={this.onSubmit} className='btn btn-default pull-right'>
             {sending ? 'Sending...' : 'Send'}
           </button>
         </div>

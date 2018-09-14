@@ -1,38 +1,51 @@
-.form-container {
-  background-color: rgba(255, 255, 255, 0.5);
-  padding: 2em;
-  border-radius: 1em;
+.contact {
+  background-color: #FFFFFF;
+  padding: 64px;
 }
 
-.form-container .input-group {
+.contact h2 {
+  text-align: center;
+}
+
+.contact .input-group {
   margin: 0.25em;
   width: 100%;
 }
 
-.form-container .input-group-addon {
+.contact .input-group-addon {
   min-width: 8em;
   text-align: left;
   font-weight: bold;
   padding-left: 2.25em;
+  border: 1px solid black;
+  border-right: none;
 }
 
-.form-container svg {
+.contact input, .contact textarea {
+  border: 1px solid black;
+}
+
+.contact textarea {
+  border-radius: 4px !important;
+}
+
+.contact svg {
   position: absolute;
   top: 50%;
   left: 1em;
   transform: translateY(-60%);
 }
 
-.form-container textarea {
+.contact textarea {
   resize: none;
 }
 
-.form-container .btn {
+.contact .btn {
   font-size: 1.25em;
   font-weight: bold;
   background-color: lightgray;
 }
 
-.form-container .btn:hover {
+.contact .btn:hover {
   background-color: white;
 }

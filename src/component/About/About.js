@@ -8,6 +8,7 @@ const About = () => (
   <ScreenPage>
     <div className='col-sm-12 col-md-offset-2 col-md-8 about'>
       <h2>About Cruftbusters</h2>
+      <br />
       <p>
         Cruftbusters is a software company dedicated to getting jobs done well
         and making users feel good about it. Our work knows no geographical
@@ -22,6 +23,7 @@ const About = () => (
         or just want to say hi then please take a few seconds to fill out
         our <Link to='/contact'>contact form</Link>.
       </p>
+      <br />
       <h3>Some of our favorites</h3>
       <Technologies />
     </div>
