@@ -1,10 +1,22 @@
 import React, { Component } from 'react'
 import { FaEnvelope, FaPhone } from 'react-icons/fa'
-import qs from 'query-string'
 
 import './Contact.css'
 
 import ScreenPage from 'component/ScreenPage'
+
+const truncateAmpersand = s => {
+  const i = s.indexOf('&')
+  if (i === -1) {
+    return s
+  }
+  else {
+    return s.substring(0, i)
+  }
+}
+const subjectFrom = search => truncateAmpersand(
+    search.substring(search.indexOf('subject=') + 'subject='.length))
+  .replace(/%20/g, ' ')
 
 const hide = (classes, show) => classes + (show ? '' : ' hidden')
 const initialState = {
@@ -96,7 +108,7 @@ class Contact extends Component {
   render() {
     const { failure, duplicate, success, sending } = this.state
     const { location: { search } } = this.props
-    const { subject } = qs.parse(search)
+    const subject = subjectFrom(search)
     return (
       <ScreenPage>
         <div className='col-sm-12 col-md-offset-2 col-md-8 contact clearfix'>
