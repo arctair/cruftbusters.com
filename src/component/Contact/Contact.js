@@ -119,7 +119,7 @@ class Contact extends Component {
           <div className={hide('alert alert-danger', failure)}>
             There was an error sending your inquiry. You can try again
             later or send an email directly to&nbsp;
-            <a href='mailto:jtyler_@outlook.com'>jtyler_@outlook.com</a>.
+            <a href='mailto:tyler@cruftbusters.com'>tyler@cruftbusters.com</a>.
           </div>
           <div className={hide('alert alert-warning', duplicate)}>
             You already sent that message. It won't be sent again, but feel
