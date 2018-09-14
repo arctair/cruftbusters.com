@@ -6,6 +6,23 @@ import Contact from 'component/Contact'
 import Home from 'component/Home'
 
 class App extends Component {
+  constructor() {
+    super()
+    this.updateDocumentTitle = this.updateDocumentTitle.bind(this)
+  }
+  componentDidMount() {
+    this.updateDocumentTitle()
+  }
+  componentDidUpdate() {
+    this.updateDocumentTitle()
+  }
+  updateDocumentTitle() {
+    const { location: { pathname }} = this.props
+    const pageTitle = pathname.startsWith('/about') ? 'About' :
+      pathname.startsWith('/contact') ? 'Contact' :
+      'Home'
+    document.title = `Cruftbusters | ${pageTitle}`
+  }
   render() {
     return (
       <div className="App">
