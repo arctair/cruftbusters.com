@@ -7,7 +7,7 @@ import SingularRow from 'component/SingularRow'
 const ScreenPage = ({ children }) => (
   <div className='fullheight atlasbg container-flex'>
     <Navigation />
-    <SingularRow flexStretch>
+    <SingularRow flexStretch halfVerticalPadding>
       {children}
     </SingularRow>
     <Footer />

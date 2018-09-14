@@ -1,6 +1,7 @@
 .about {
   background-color: white;
   padding: 64px;
+  padding-top: 32px;
 }
 
 .about h2, .about h3 {
