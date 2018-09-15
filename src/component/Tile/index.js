@@ -1,5 +1,5 @@
 import Tile from './Tile'
 
-import './Tile.css'
+import './Tile.scss'
 
 export default Tile

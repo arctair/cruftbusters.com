@@ -1,0 +1,48 @@
+@import 'theme/theme.scss';
+
+.tile {
+  height: 9em;
+  padding: 0;
+  .tile-content {
+    position:  absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: 4px;
+    padding: 8px;
+    text-align: center;
+    transition: filter 200ms;
+    &:hover {
+      filter: brightness(150%);
+    }
+    .theme-1 & {
+      background-color: $theme-1;
+      color: $theme-1-2;
+      h3 {
+        color: $theme-1-1;
+      }
+    }
+    .theme-2 & {
+      background-color: $theme-2;
+      color: $theme-2-2;
+      h3 {
+        color: $theme-2-1;
+      }
+    }
+    .theme-3 & {
+      background-color: $theme-3;
+      color: $theme-3-2;
+      h3 {
+        color: $theme-3-1;
+      }
+    }
+    .theme-4 & {
+      background-color: $theme-4;
+      color: $theme-4-2;
+      h3 {
+        color: $theme-4-1;
+      }
+    }
+  }
+}
