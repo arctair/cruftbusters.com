@@ -18,3 +18,8 @@ footer a:hover {
   color: #FFFFFF;
   text-decoration: none;
 }
+
+.social-media a {
+  font-size: 2.5em;
+  margin: 8px;
+}
