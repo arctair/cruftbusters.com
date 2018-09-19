@@ -1,34 +1,29 @@
-.row {
-  font-family: "Open Sans", sans-serif;
-  line-height: 1.75em;
-}
-
 @media only screen and (min-width : 320px) {
-  .row {
+  .responsive-padding {
     padding: 2em;
   }
 }
 
 @media only screen and (min-width : 480px) {
-  .row {
+  .responsive-padding {
     padding: 2em;
   }
 }
 
 @media only screen and (min-width : 768px) {
-  .row {
+  .responsive-padding {
     padding: 4em;
   }
 }
 
 @media only screen and (min-width : 992px) {
-  .row {
+  .responsive-padding {
     padding: 6em;
   }
 }
 
 @media only screen and (min-width : 1200px) {
-  .row {
+  .responsive-padding {
     padding: 8em;
   }
 }
@@ -46,6 +41,15 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.parallax.fixed {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
 }
 
 section {
@@ -68,6 +72,10 @@ h1, h2 {
   font-family: 'Lato', sans-serif;
   text-transform: uppercase;
   font-weight: 300;
+}
+
+.tiles {
+  padding: 0;
 }
 
 .atlasbg {

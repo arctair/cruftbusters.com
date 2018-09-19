@@ -3,7 +3,6 @@ import { FaEnvelope, FaPhone } from 'react-icons/fa'
 
 import './Contact.css'
 
-import CloseButton from 'component/CloseButton'
 import ScreenPage from 'component/ScreenPage'
 
 const truncateAmpersand = s => {
@@ -111,62 +110,61 @@ class Contact extends Component {
     const { location: { search }, history: { goBack } } = this.props
     const subject = subjectFrom(search)
     return (
-      <ScreenPage>
-        <div className='col-sm-12 col-md-offset-2 col-md-8 contact clearfix'>
-          <CloseButton goBack={goBack}/>
-          <h2>Contact Us</h2>
-          <br />
-          <div className={hide('alert alert-danger', failure)}>
-            There was an error sending your inquiry. You can try again
-            later or send an email directly to&nbsp;
-            <a href='mailto:tyler@cruftbusters.com'>tyler@cruftbusters.com</a>.
-          </div>
-          <div className={hide('alert alert-warning', duplicate)}>
-            You already sent that message. It won't be sent again, but feel
-            free to send a new message if you'd like.
-          </div>
-          <div className={hide('alert alert-success', success)}>
-            Your inquiry was sent! We'll get back to you as soon as possible.
-          </div>
-          <div className='input-group'>
-            <span className='input-group-addon' id='email-addon'><FaEnvelope /> Email</span>
-            <input
-              type='email'
-              className='form-control'
-              id='inputEmail'
-              aria-describedby='email-addon'
-              ref={e => this.inputEmail = e}
-            />
-          </div>
-          <div className='input-group'>
-            <span className='input-group-addon' id='tel-addon'><FaPhone /> Phone</span>
-            <input
-              type='tel'
-              className='form-control'
-              id='inputTel'
-              aria-describedby='tel-addon'
-              ref={e => this.inputTel = e}
-            />
-          </div>
-          <div className='input-group'>
-            <span className='input-group-addon' id='subject-addon'>Subject</span>
-            <input
-              type='text'
-              className='form-control'
-              id='inputSubject'
-              aria-describedby='subject-addon'
-              ref={e => this.inputSubject = e}
-              defaultValue={subject}
-            />
-          </div>
-          <div className='input-group'>
-            <textarea
-              className='form-control'
-              id='textareaBody'
-              rows='5'
-              ref={e => this.textareaBody = e}
-            />
-          </div>
+      <ScreenPage className='contact' goBack={goBack}>
+        <h2>Contact Us</h2>
+        <br />
+        <div className={hide('alert alert-danger', failure)}>
+          There was an error sending your inquiry. You can try again
+          later or send an email directly to&nbsp;
+          <a href='mailto:tyler@cruftbusters.com'>tyler@cruftbusters.com</a>.
+        </div>
+        <div className={hide('alert alert-warning', duplicate)}>
+          You already sent that message. It won't be sent again, but feel
+          free to send a new message if you'd like.
+        </div>
+        <div className={hide('alert alert-success', success)}>
+          Your inquiry was sent! We'll get back to you as soon as possible.
+        </div>
+        <div className='input-group'>
+          <span className='input-group-addon' id='email-addon'><FaEnvelope /> Email</span>
+          <input
+            type='email'
+            className='form-control'
+            id='inputEmail'
+            aria-describedby='email-addon'
+            ref={e => this.inputEmail = e}
+          />
+        </div>
+        <div className='input-group'>
+          <span className='input-group-addon' id='tel-addon'><FaPhone /> Phone</span>
+          <input
+            type='tel'
+            className='form-control'
+            id='inputTel'
+            aria-describedby='tel-addon'
+            ref={e => this.inputTel = e}
+          />
+        </div>
+        <div className='input-group'>
+          <span className='input-group-addon' id='subject-addon'>Subject</span>
+          <input
+            type='text'
+            className='form-control'
+            id='inputSubject'
+            aria-describedby='subject-addon'
+            ref={e => this.inputSubject = e}
+            defaultValue={subject}
+          />
+        </div>
+        <div className='input-group'>
+          <textarea
+            className='form-control'
+            id='textareaBody'
+            rows='5'
+            ref={e => this.textareaBody = e}
+          />
+        </div>
+        <div className='clearfix'>
           <button onClick={this.onSubmit} className='btn btn-default pull-right'>
             {sending ? 'Sending...' : 'Send'}
           </button>

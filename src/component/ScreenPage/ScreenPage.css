@@ -1,4 +1,18 @@
 .container-flex {
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+.container-flex>.container-fluid {
+  flex: 1;
+  margin: 0;
+}
+
+.screen-modal {
+  background-color: white;
+  padding-top: 2em;
+  padding-bottom: 4em;
+  margin-bottom: 4em;
 }
