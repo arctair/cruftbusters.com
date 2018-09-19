@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import { Route, Switch, withRouter } from 'react-router-dom'
 
+import './Background.css'
+
 import About from 'component/About'
 import Contact from 'component/Contact'
 import Home from 'component/Home'

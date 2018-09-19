@@ -1,0 +1,99 @@
+.atlasbg {
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+  .atlasbg {
+    background-image: url('./Backgrounds/atlas.jpg?size=480');
+  }
+  .appsbg {
+    background-image: url('./Backgrounds/apps.jpg?size=480');
+  }
+  .databg {
+    background-image: url('./Backgrounds/radio.jpg?size=480');
+  }
+  .powerlinebg {
+    background-image: url('./Backgrounds/powerline.jpg?size=480');
+  }
+  .cartographybg {
+    background-image: url('./Backgrounds/map.jpg?size=480');
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+  .atlasbg {
+    background-image: url('./Backgrounds/atlas.jpg?size=768');
+  }
+  .appsbg {
+    background-image: url('./Backgrounds/apps.jpg?size=768');
+  }
+  .databg {
+    background-image: url('./Backgrounds/radio.jpg?size=768');
+  }
+  .powerlinebg {
+    background-image: url('./Backgrounds/powerline.jpg?size=768');
+  }
+  .cartographybg {
+    background-image: url('./Backgrounds/map.jpg?size=768');
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+  .atlasbg {
+    background-image: url('./Backgrounds/atlas.jpg?size=992');
+  }
+  .appsbg {
+    background-image: url('./Backgrounds/apps.jpg?size=992');
+  }
+  .databg {
+    background-image: url('./Backgrounds/radio.jpg?size=992');
+  }
+  .powerlinebg {
+    background-image: url('./Backgrounds/powerline.jpg?size=992');
+  }
+  .cartographybg {
+    background-image: url('./Backgrounds/map.jpg?size=992');
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+  .atlasbg {
+    background-image: url('./Backgrounds/atlas.jpg?size=1200');
+  }
+  .appsbg {
+    background-image: url('./Backgrounds/apps.jpg?size=1200');
+  }
+  .databg {
+    background-image: url('./Backgrounds/radio.jpg?size=1200');
+  }
+  .powerlinebg {
+    background-image: url('./Backgrounds/powerline.jpg?size=1200');
+  }
+  .cartographybg {
+    background-image: url('./Backgrounds/map.jpg?size=1200');
+  }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+  .atlasbg {
+    background-image: url('./Backgrounds/atlas.jpg');
+  }
+  .appsbg {
+    background-image: url('./Backgrounds/apps.jpg');
+  }
+  .databg {
+    background-image: url('./Backgrounds/radio.jpg');
+  }
+  .powerlinebg {
+    background-image: url('./Backgrounds/powerline.jpg');
+  }
+  .cartographybg {
+    background-image: url('./Backgrounds/map.jpg');
+  }
+}

@@ -86,25 +86,3 @@ h1, h2 {
 .tiles {
   padding: 0;
 }
-
-.atlasbg {
-  background-image: url('./background/atlas.jpg');
-  background-blend-mode: darken;
-  background-color: rgba(0, 0, 0, .5);
-}
-
-.appsbg {
-  background-image: url('./background/apps.jpg');
-}
-
-.databg {
-  background-image: url('./background/radio.jpg');
-}
-
-.powerlinebg {
-  background-image: url('./background/powerline.jpg');
-}
-
-.cartographybg {
-  background-image: url('./background/map.jpg');
-}
