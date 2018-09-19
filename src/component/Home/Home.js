@@ -27,11 +27,13 @@ class Home extends Component {
   render() {
     return (
       <Fragment>
-        <div className='parallax atlasbg fullheight'>
-          <Navigation />
-          <section>
+        <div className='cover-panel parallax atlasbg fullheight'>
+          <div className='navbar-container'>
+            <Navigation />
+          </div>
+          <div className='header-quote-container'>
             <h1>Tell your story</h1>
-          </section>
+          </div>
         </div>
         <div className='container-fluid' id='software' ref='software'>
           <div className='row responsive-padding'>

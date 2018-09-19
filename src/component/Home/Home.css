@@ -52,16 +52,25 @@
   z-index: -1;
 }
 
-section {
-  position: relative;
-  height: 100%;
+.cover-panel {
+  display: flex;
+  flex-direction: column;
 }
 
-section h1 {
+.navbar-container {
+  flex: 0;
+}
+
+.header-quote-container {
+  position: relative;
+  flex: 1;
+}
+
+.header-quote-container h1 {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -75%);
+  transform: translate(-50%, -100%);
   font-family: 'Permanent Marker', cursive;
   font-size: 8vmax;
   text-align: center;
