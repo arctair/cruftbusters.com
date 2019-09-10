@@ -1,0 +1,21 @@
+branches:
+  only:
+  - master
+
+env:
+  global:
+    - PATH=$HOME/.local/bin:$PATH
+
+before_install:
+  - pip install --user awscli
+
+language: node_js
+node_js:
+  - 'stable'
+cache:
+  directories:
+  - node_modules
+script:
+  - yarn build
+  - yarn deploy
+  - yarn invalidate
