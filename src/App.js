@@ -1,10 +1,13 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import {
+  IconButton,
   Paper,
   Typography,
   withStyles,
 } from '@material-ui/core';
+import EmailIcon from '@material-ui/icons/Email';
 
 const styles = theme => ({
   splash: {
@@ -24,17 +27,26 @@ const styles = theme => ({
     paddingRight: theme.spacing(12),
     backgroundColor: '#dfddc3',
     color: '#59575e',
+    textAlign: 'center',
   },
   header: {
     paddingBottom: theme.spacing(2),
   },
-  center: {
-    textAlign: 'center',
-  },
   ul: {
     listStyleType: 'none',
-    textAlign: 'center',
     padding: 0,
+  },
+  talk: {
+    textDecoration: 'none',
+    color: 'inherit',
+    '-webkit-tap-highlight-color': 'transparent',
+  },
+  iconButton: {
+    '-webkit-tap-highlight-color': 'transparent',
+  },
+  iconButtonTypography: {
+    marginLeft: theme.spacing(1),
+    fontWeight: 700,
   },
 });
 
@@ -43,10 +55,10 @@ function App({ classes }) {
     <>
       <div className={classes.splash} />
       <Paper className={classes.paper} square>
-        <Typography variant='h3' className={classes.header}>
+        <Typography variant='h3'>
           Cruftbusters
         </Typography>
-        <Typography variant='h4' className={classes.center}>
+        <Typography variant='h4'>
           Consulting
         </Typography>
         <ul className={classes.ul}>
@@ -54,7 +66,7 @@ function App({ classes }) {
           <li>Web Service Development</li>
           <li>Terminal/Console App Development</li>
         </ul>
-        <Typography variant='h4' className={classes.center}>
+        <Typography variant='h4'>
           Workshops
         </Typography>
         <ul className={classes.ul}>
@@ -65,6 +77,14 @@ function App({ classes }) {
           <li>RabbitMQ</li>
           <li>React</li>
         </ul>
+        <Link to='/talk' className={classes.talk}>
+          <IconButton className={classes.iconButton}>
+            <EmailIcon />
+            <Typography variant='subtitle1' className={classes.iconButtonTypography}>
+              Talk to me
+            </Typography>
+          </IconButton>
+        </Link>
       </Paper>
     </>
   );
