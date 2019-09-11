@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <div style={{
-        backgroundImage: 'url(\'/tomas-malik-Oph_Fs9bWwg-unsplash.jpg\')',
+        backgroundImage: 'url(\'steven-lewis-dmHnXJ-5ilQ-unsplash.jpg\')',
         backgroundSize: 'cover',
         width: '100%',
         height: '100%',
