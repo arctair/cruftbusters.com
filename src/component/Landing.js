@@ -18,8 +18,6 @@ const styles = theme => ({
     padding: theme.spacing(4),
     paddingLeft: theme.spacing(12),
     paddingRight: theme.spacing(12),
-    backgroundColor: '#FFF0E0',
-    color: '#564637',
     textAlign: 'center',
   },
   header: {
