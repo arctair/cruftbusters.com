@@ -1,0 +1,85 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+
+import {
+  IconButton,
+  Paper,
+  Typography,
+  withStyles,
+} from '@material-ui/core';
+import EmailIcon from '@material-ui/icons/Email';
+
+const styles = theme => ({
+  paper: {
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    padding: theme.spacing(4),
+    paddingLeft: theme.spacing(12),
+    paddingRight: theme.spacing(12),
+    backgroundColor: '#FFF0E0',
+    color: '#564637',
+    textAlign: 'center',
+  },
+  header: {
+    paddingBottom: theme.spacing(2),
+  },
+  ul: {
+    listStyleType: 'none',
+    padding: 0,
+  },
+  talk: {
+    textDecoration: 'none',
+    color: 'inherit',
+    '-webkit-tap-highlight-color': 'transparent',
+  },
+  iconButton: {
+    '-webkit-tap-highlight-color': 'transparent',
+  },
+  iconButtonTypography: {
+    marginLeft: theme.spacing(1),
+    fontWeight: 700,
+  },
+});
+
+function App({ classes }) {
+  return (
+    <>
+      <Paper className={classes.paper} square>
+        <Typography variant='h3'>
+          Cruftbusters
+        </Typography>
+        <Typography variant='h4'>
+          Consulting
+        </Typography>
+        <ul className={classes.ul}>
+          <li>Web App Development</li>
+          <li>Web Service Development</li>
+          <li>Terminal/Console App Development</li>
+        </ul>
+        <Typography variant='h4'>
+          Workshops
+        </Typography>
+        <ul className={classes.ul}>
+          <li>XP teams/organizations</li>
+          <li>Test-Driven Development</li>
+          <li>Spring Boot</li>
+          <li>Apache Kafka</li>
+          <li>RabbitMQ</li>
+          <li>React</li>
+        </ul>
+        <Link to='/talk' className={classes.talk}>
+          <IconButton className={classes.iconButton}>
+            <EmailIcon />
+            <Typography variant='subtitle1' className={classes.iconButtonTypography}>
+              Talk to me
+            </Typography>
+          </IconButton>
+        </Link>
+      </Paper>
+    </>
+  );
+}
+
+export default withStyles(styles)(App);
