@@ -1,24 +1,44 @@
 import React from 'react';
 
 import {
+  Paper,
   Typography,
+  withStyles,
 } from '@material-ui/core';
 
-function App() {
+const styles = theme => ({
+  paper: {
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    padding: theme.spacing(2),
+  },
+  center: {
+    textAlign: 'center',
+  },
+  ul: {
+    listStyleType: 'none',
+    textAlign: 'center',
+    padding: 0,
+  },
+});
+
+function App({ classes }) {
   return (
-    <div>
-      <Typography variant='h2'>
+    <Paper className={classes.paper}>
+      <Typography variant='h4' className={classes.center}>
         Consulting
       </Typography>
-      <ul>
+      <ul className={classes.ul}>
         <li>Web App Development</li>
         <li>Web Service Development</li>
         <li>Terminal/Console App Development</li>
       </ul>
-      <Typography variant='h2'>
+      <Typography variant='h4' className={classes.center}>
         Workshops
       </Typography>
-      <ul>
+      <ul className={classes.ul}>
         <li>XP teams/organizations</li>
         <li>Test-Driven Development</li>
         <li>Spring Boot</li>
@@ -26,8 +46,8 @@ function App() {
         <li>RabbitMQ</li>
         <li>React</li>
       </ul>
-    </div>
+    </Paper>
   );
 }
 
-export default App;
+export default withStyles(styles)(App);
